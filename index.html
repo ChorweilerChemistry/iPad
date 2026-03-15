@@ -8,7 +8,7 @@
             margin: 0;
             height: 100%;
         }
-        iframe {
+        object {
             width: 100%;
             height: 100%;
             border: none;
@@ -16,6 +16,10 @@
     </style>
 </head>
 <body>
-    <iframe src="Preisliste.pdf"></iframe>
+    <object data="Preisliste.pdf" type="application/pdf">
+        <p>PDF wird im Browser nicht unterstützt. 
+           <a href="Preisliste.pdf" target="_blank">Hier herunterladen</a>.
+        </p>
+    </object>
 </body>
 </html>
