@@ -4,25 +4,21 @@
     <meta charset="UTF-8">
     <title>Preisliste iPad</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2rem;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #333;
-        }
-        iframe {
-            border: 1px solid #ccc;
-            width: 100%;
-            height: 900px;
-        }
+        body { font-family: Arial, sans-serif; margin: 2rem; background-color: #f9f9f9; }
+        h1 { color: #333; }
+        .pdf-container { width: 100%; height: 900px; border: 1px solid #ccc; }
     </style>
 </head>
 <body>
     <h1>Preisliste iPad</h1>
-    <p>Hier kannst du die aktuelle Preisliste direkt im Browser ansehen:</p>
-    <iframe src="preisliste.pdf"></iframe>
-    <p>Falls das PDF nicht angezeigt wird, kannst du es auch <a href="preisliste.pdf" target="_blank">hier herunterladen</a>.</p>
+    <p>Die PDF kannst du hier direkt ansehen oder herunterladen:</p>
+
+    <!-- Link zur PDF für Browser-Viewer -->
+    <object class="pdf-container" data="preisliste.pdf" type="application/pdf">
+        <p>Ihr Browser unterstützt kein direktes PDF-Embedding. 
+           Du kannst die PDF hier herunterladen: 
+           <a href="preisliste.pdf" target="_blank">Preisliste herunterladen</a>.
+        </p>
+    </object>
 </body>
 </html>
